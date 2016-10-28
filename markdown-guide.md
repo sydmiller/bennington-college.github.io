@@ -25,7 +25,8 @@ Make a link by putting the text in square brackets, followed by the url in paren
 
 To render an image, put an exclamation mark in front of a link to the image file (the link text becomes metadata for search engines and screen readers).
 
-![Apples and Oranges (Cezanne)](/assets/image.jpg)
+![Atrax Morgue Marco Corbelli](/assets/morgue1.jpg)
+![Atrax Morgue Marco Corbelli](/assets/morgue3.jpg)
 
 A code block:
 
