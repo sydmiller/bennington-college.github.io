@@ -1,3 +1,7 @@
+body {
+  font-style: blink;
+}
+
 img:hover {
   -webkit-filter: grayscale(0%);
   -webkit-transition: .5s ease-in-out;
@@ -11,10 +15,5 @@ img:hover {
 img {
   opacity: .7;
   -webkit-filter: grayscale(100%);
-  -webkit-transition: .5s ease-in-out;
-  -moz-filter: grayscale(100%); 
-  -moz-transition: .5s ease-in-out;
-  -o-filter: grayscale(100%); 
-  -o-transition: .5s ease-in-out;
   filter: grayscale(100%);
 }
