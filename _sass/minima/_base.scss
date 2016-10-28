@@ -50,18 +50,7 @@ p, pre {
 img {
   max-width: 100%;
   vertical-align: middle;
-  -webkit-filter:opacity(.8);
-  -webkit-filter:grayscale(100%);
-  -webkit-transition: all 0,3s ease;
-     -moz-transition: all 0,3s ease;
-       -o-transition: all 0,3s ease;
-      -ms-transition: all 0,3s ease;
-          transition: all 0,3s ease;
-}
- 
-img:hover {
-  -webkit-filter: opacity(0.3);
-  -webkit-filter:grayscale(0%);
+  padding-bottom: 20px;
 }
 
 
@@ -140,11 +129,11 @@ h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: $link-color;
   text-decoration: em;
 
   &:visited {
-    color: darken($brand-color, 5%);
+    color: darken($link-color, 5%);
   }
 
   &:hover {
