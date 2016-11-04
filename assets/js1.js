@@ -18,16 +18,16 @@ $( document ).ready(function() {
   		$( this ).hide('slow');
 	  });
 //shift body right on hover
-	$('body').mousemove(
+	$('body').mouseenter(
 	  function() {
 	    $('body').css('position', 'relative');
 	    $('body').css('left', '30px');
 	  }
 	);
 
-	$('body').mousemove(
+	$('body').mouseout(
 	  function() {
-  		$('body').css('position', 'initial');
+  		$('body').css('position', 'relative');
 	    $('body').css('right', '30px');
 	  }
 	);
