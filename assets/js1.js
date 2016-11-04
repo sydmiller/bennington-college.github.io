@@ -18,17 +18,17 @@ $( document ).ready(function() {
   		$( this ).hide('slow');
 	  });
 //shift body right on hover
-	$('img').mousemove(
+	$('body').mousemove(
 	  function() {
-	    $('img').css('position', 'relative');
-	    $('img').css('left', '30px');
+	    $('body').css('position', 'relative');
+	    $('body').css('left', '30px');
 	  }
 	);
 
-	$('img').mousemove(
+	$('body').mousemove(
 	  function() {
-  		$('img').css('position', 'initial');
-	    $('img').css('right', '30px');
+  		$('body').css('position', 'initial');
+	    $('body').css('right', '30px');
 	  }
 	);
 
