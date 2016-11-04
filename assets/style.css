@@ -1,6 +1,7 @@
 body {
   font-family: "Lucida Console", Lucida, monospace, !default;
   font-style: blink;
+  cursor: crosshair;
 }
 
 img:hover {
