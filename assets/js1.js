@@ -2,13 +2,13 @@ $( document ).ready(function() {
 // hover h3 elements yellow
 	$('h3').mouseenter(
 	  function() {
-	    $('h3').css('background-color', '#f3ff95');
+	    $('h3').css('background-color', '#f3ff95').fadein(800);
 	  }
 	);
 
 	$('h3').mouseout(
 	  function() {
-	    $(this).css('background-color', '#f2f2f2');
+	    $(this).css('background-color', '#f2f2f2').fadein(800);
 	  }
 	);
 // links removed on click
