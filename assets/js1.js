@@ -20,7 +20,6 @@ $( document ).ready(function() {
 //shift body right on hover
 	$('body').mouseenter(
 	  function() {
-
 	    $('body').delay(100).css('position', 'relative');
 	    $('body').css('left', '30px');
 	  }
@@ -29,7 +28,7 @@ $( document ).ready(function() {
 	$('body').mouseout(
 	  function() {
   		$('body').delay(100).css('position', 'relative');
-	    $('body').css('right', '30px');
+	    $('body').css('left', '-30px');
 	  }
 	);
 
