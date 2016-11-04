@@ -20,14 +20,15 @@ $( document ).ready(function() {
 //shift body right on hover
 	$('body').mouseenter(
 	  function() {
-	    $('body').css('position', 'relative');
+
+	    $('body').delay(100).css('position', 'relative');
 	    $('body').css('left', '30px');
 	  }
 	);
 
 	$('body').mouseout(
 	  function() {
-  		$('body').css('position', 'relative');
+  		$('body').delay(100).css('position', 'relative');
 	    $('body').css('right', '30px');
 	  }
 	);
