@@ -1,8 +1,14 @@
 $( document ).ready(function() {
 
-	$('h3').hover(
+	$('h3').mouseenter(
 	  function() {
 	    $('h3').css('background-color', '#f3ff95');
+	  }
+	);
+
+	$('h3').mouseout(
+	  function() {
+	    $('h3').css('background-color', '#f2f2f2');
 	  }
 	);
 	
