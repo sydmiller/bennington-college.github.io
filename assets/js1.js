@@ -7,14 +7,9 @@ $( document ).ready(function() {
 	);
 	
 	$( "a" ).click(
-	  function() {
-    	$( this ).fadeOut( 1000, function() {
-    	$( "a" ).hide("slow");
-		$( "a" ).click(
-		  function( event ) {
-  			event.preventDefault();
-  			$( this ).hide("slow");
-		  });
+		function( event ) {
+  		event.preventDefault();
+  		$( this ).hide("slow");
 	  });
 
 });
