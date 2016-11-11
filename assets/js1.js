@@ -14,13 +14,8 @@ $( document ).ready(function() {
 
 	$('button').mouseenter(
 	  function() {
-	  		var hueValue = Math.Random() * 360;
+	  	  var hueValue = Math.Random() * 360;
 		  $('body').css('background-color', 'hueValue');
-	  }
-	);
-
-	$('button').mouseout(
-		  $('body').css('background-color', 'default');
 	  }
 	);
 
