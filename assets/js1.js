@@ -11,13 +11,47 @@ $( document ).ready(function() {
 	    $(this).css('background-color', '#f2f2f2').fadein(800);
 	  }
 	);
+
+	$('button').mouseenter(
+	  function() {
+	  		var hueValue = Math.Random() * 360;
+		  $('body').css('background-color', 'hueValue');
+	  }
+	);
+
+	$('button').mouseout(
+		  $('body').css('background-color', 'default');
+	  }
+	);
+
+	$('body').click(
+	  function(event) {
+
+	  	var yPos = event.pageY;
+	  	var xPos = event.pageX;
+
+		var screenHeight = $('body').height();
+		var screenWidth = $('body').width();
+
+		var satValue = horPos / screenWidth * 100;
+		var lightValue = verPos / screenHeight * 100;
+
+		if (lightValue < 50) {
+		  $('body').css('font-color', 'black');
+
+		}
+		else { 
+		  $('body').css('font-color', 'white');
+		} 
+	};
+}
+/*/shift body right on hover
 // links removed on click
 	$('a').click(
 		function( event ) {
   		event.preventDefault();
   		$(this).hide('slow');
 	  });
-//shift body right on hover
 	$('body').mouseenter(
 	  function() {
 	    $('body').delay(100).css('position', 'relative');
