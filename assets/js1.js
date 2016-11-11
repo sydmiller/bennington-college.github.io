@@ -19,14 +19,14 @@ $( document ).ready(function() {
 	  }
 	);
 
-	$('body').click(
+	$(document).click(
 	  function(event) {
 
 	  	var yPos = event.pageY;
 	  	var xPos = event.pageX;
 
-		var screenHeight = $('body').height();
-		var screenWidth = $('body').width();
+		var screenHeight = $(document).height();
+		var screenWidth = $(document).width();
 
 		var satValue = horPos / screenWidth * 100;
 		var lightValue = verPos / screenHeight * 100;
