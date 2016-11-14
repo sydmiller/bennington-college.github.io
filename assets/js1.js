@@ -20,25 +20,25 @@ $( document ).ready(function() {
 	);
 
 	$(document).click(
-	  function(event) {
+		function(event) {
+		  	var yPos = event.pageY;
+		  	var xPos = event.pageX;
 
-	  	var yPos = event.pageY;
-	  	var xPos = event.pageX;
+			var screenHeight = $(document).height();
+			var screenWidth = $(document).width();
 
-		var screenHeight = $(document).height();
-		var screenWidth = $(document).width();
+			var satValue = horPos / screenWidth * 100;
+			var lightValue = verPos / screenHeight * 100;
 
-		var satValue = horPos / screenWidth * 100;
-		var lightValue = verPos / screenHeight * 100;
+			if (lightValue < 50) {
+			  $('body').css('font-color', 'black');
 
-		if (lightValue < 50) {
-		  $('body').css('font-color', 'black');
-
+			}
+			else { 
+			  $('body').css('font-color', 'white');
+			} 
 		}
-		else { 
-		  $('body').css('font-color', 'white');
-		} 
-	};
+	);
 }
 /*/shift body right on hover
 // links removed on click
