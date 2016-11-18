@@ -36,7 +36,7 @@ $( document ).ready(function() {
 	  }
 	);
 
-	$('body').click(
+	$(document).click(
 		function(event) {
 		  	var yPos = event.pageY;
 		  	var xPos = event.pageX;
