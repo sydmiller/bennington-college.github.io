@@ -51,11 +51,13 @@ var characters = {
 }
 
 characters.appear(['•','◊','∆']);
-$('body').click( function(event) {
-	characters.newSize();
-	characters.newColor();
-});
+$( document ).ready(function() {
 
+	$('body').click( function(event) {
+		characters.newSize();
+		characters.newColor();
+	});
+});
 // characters.appear(['•','◊','∆']);
 // $('body').click( function(event) {
 // 	alert(event.pageX);
