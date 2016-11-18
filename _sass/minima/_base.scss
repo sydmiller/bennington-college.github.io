@@ -25,6 +25,12 @@ body {
   font-kerning: normal;
 }
 
+button {
+  position: relative;
+  float-left: 100px;
+  padding: 20px;
+}
+
 .reverse {
   letter-spacing: 30px;
 } 
