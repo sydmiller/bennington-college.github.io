@@ -40,13 +40,13 @@ var characters = {
 	  	var saturationValue = Math.random() * 100;
 	  	var lightnessValue = Math.random() * 100;
 	  	var hsl = "hsl(" + hueValue + "," + saturationValue + "%," + lightnessValue + "%)";
-		$('.character').css('color', 'hls');
+		$('.characters').css('color', 'hls');
 	},
 	// characters.newSize();
 	// change the character css to a random font-size between 50 and 400%
 	newSize: function() {
 		var ranSize = 50 + Math.random() * 350 + "%";
-		$('.character').css('font-size', 'randSize');
+		$('.characters').css('font-size', 'randSize');
 	}
 }
 characters.appear(['•','◊','∆']);
@@ -60,7 +60,7 @@ $('body').click( function(event) {
 </script>
 
 <style>
-.character {
+.characters {
 	position: absolute;
 	font-size: 60px;
 }
