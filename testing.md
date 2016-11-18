@@ -46,7 +46,7 @@ var characters = {
 	// change the character css to a random font-size between 50 and 400%
 	newSize: function() {
 		var ranSize = 50 + Math.random() * 350 + "%";
-		$('.characters').css('font-size', 'randSize');
+		$('.characters').css('font-size', ranSize);
 	}
 }
 
