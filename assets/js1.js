@@ -32,25 +32,25 @@ $( document ).ready(function() {
 	  	  var lightnessValue = Math.random() * 100;
 	  	  var hsl = "hsl(" + hueValue + "," + saturationValue + "%," + lightnessValue + "%)";
 		  $('body').css('background-color', hsl);
-		setFontColor(lightnessValue);
+		//setFontColor(lightnessValue);
 	  }
 	);
 
-	// $(document).click(
-	// 	function(event) {
-	// 	  	var yPos = event.pageY;
-	// 	  	var xPos = event.pageX;
+	$(document).click(
+		function(event) {
+		  	var yPos = event.pageY;
+		  	var xPos = event.pageX;
 
-	// 		var screenHeight = $(document).height();
-	// 		var screenWidth = $(document).width();
+			var screenHeight = $(document).height();
+			var screenWidth = $(document).width();
 
-	// 		var satValue = xPos / screenWidth * 100;
-	// 		var lightValue = yPos / screenHeight * 100;
+			var satValue = xPos / screenWidth * 100;
+			var lightValue = yPos / screenHeight * 100;
 
-	// 		setFontColor(lightValue);
+			setFontColor(lightValue);
 
-	// 	}
-	// );
+		}
+	);
 });
 
 
