@@ -41,20 +41,26 @@ var characters = {
 	// characters.newColor();
 	// change the characters to a random color, using hsl values
 	newColor: function() {
-
+		var hueValue = Math.random() * 360;
+	  	var saturationValue = Math.random() * 100;
+	  	var lightnessValue = Math.random() * 100;
+	  	var hsl = "hsl(" + hueValue + "," + saturationValue + "%," + lightnessValue + "%)";
+		$('.character').css('color', 'hls');
 	},
 	// characters.newSize();
 	// change the character css to a random font-size between 50 and 400%
 	newSize: function() {
-
+		var ranSize = 50 + Math.random() * 350 + "%";
+		$('.character').css('font-size', 'randSize');
 	}
 }
 characters.appear(['•','◊','∆']);
 $('body').click( function(event) {
 	alert(event.pageX);
 	alert(event.pageY);
-	characters.move(event.pageX, event.pageY, characters.count)
-})
+	characters.move(event.pageX, event.pageY, characters.count);
+
+});
 
 </script>
 
