@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Video Art
+title: Testing
 permalink: /void/
 heading: 
 ---
@@ -27,11 +27,17 @@ var characters = {
 	},
 	move: function(destX, destY, count) {
 		var whichChar = Math.floor(Math.random()*characters.count);
-		alert(characters.count);
+		//alert(characters.count);
 		$('.character').animate(
 			{ top: destY, left: destX },
 		  	3000
 		);
+		$('.character').each(function(index) {
+				$(this).animate(
+				{ opacity: .25, top: Math.random()*300, left: Math.random()*300},
+		  		3000
+			);					
+		});
 	},
 	// characters.newColor();
 	// change the characters to a random color, using hsl values
@@ -40,22 +46,32 @@ var characters = {
 	  	var saturationValue = Math.random() * 100;
 	  	var lightnessValue = Math.random() * 100;
 	  	var hsl = "hsl(" + hueValue + "," + saturationValue + "%," + lightnessValue + "%)";
-		$('.characters').css('color', 'hls');
+		$('.character').css('color', hsl);
 	},
 	// characters.newSize();
 	// change the character css to a random font-size between 50 and 400%
 	newSize: function() {
 		var ranSize = 50 + Math.random() * 350 + "%";
-		$('.characters').css('font-size', ranSize);
+		$('.character').css('font-size', ranSize);
 	}
 }
 
-characters.appear(['•','◊','∆']);
+var x = prompt("Please enter a number", "0");
+parseInt(x);
+
+if (x != null ) {
+	for(var i = 0; i < x; i++){
+    	characters.appear(['•','◊','∆']);
+	}
+}
+
 $( document ).ready(function() {
 
-	$('body').click( function(event) {
+	$('.character').click( function(event) {
 		characters.newSize();
 		characters.newColor();
+		//alert(event.pageX + " " + event.pageY);
+		characters.move(event.pageX, event.pageY);
 	});
 });
 // characters.appear(['•','◊','∆']);
@@ -69,8 +85,9 @@ $( document ).ready(function() {
 </script>
 
 <style>
-.characters {
+.character {
 	position: absolute;
 	font-size: 60px;
+	z-index: 2;
 }
 </style>
