@@ -49,13 +49,20 @@ var characters = {
 		$('.characters').css('font-size', 'randSize');
 	}
 }
+
 characters.appear(['•','◊','∆']);
 $('body').click( function(event) {
-	alert(event.pageX);
-	alert(event.pageY);
-	characters.move(event.pageX, event.pageY, characters.count);
-
+	characters.newSize();
+	characters.newColor();
 });
+
+// characters.appear(['•','◊','∆']);
+// $('body').click( function(event) {
+// 	alert(event.pageX);
+// 	alert(event.pageY);
+// 	characters.move(event.pageX, event.pageY, characters.count);
+
+// });
 
 </script>
 
