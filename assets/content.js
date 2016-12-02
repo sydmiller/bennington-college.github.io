@@ -58,6 +58,10 @@ content.text = {
     	// change corresponding text in the html document using jquery .text() method
         this.element.text(newEntry);
     }
+
+    scramble: function() {
+        A = Array.from(this.string);
+    }
 }
 
 content.ele = {
@@ -75,22 +79,13 @@ content.ele = {
             aspectRatio: true
         });
 
-    }
+    },
 
-    follow: function(){
+    follow: function() {
         this.string.animate(
             {top: event.pageY, left: event.pageX},
             5000, 
             "easeOutBounce"
             );      
     }
-}
-
-content.scramble = {
-    count: 0,
-    index: null, 
-    string: null,
-    element: null,
-
-    
 }
