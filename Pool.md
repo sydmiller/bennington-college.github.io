@@ -1,10 +1,10 @@
-
 ---
 layout: page
 title: Pool
 permalink: /pool/
 heading: 
 ---
+
 <script type="text/javascript">
 	$("#new_text").click(
 		function() {
