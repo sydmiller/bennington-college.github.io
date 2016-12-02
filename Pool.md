@@ -13,6 +13,13 @@ heading:
 			newText.place();
 		}
 	);
+  $("#new_ele").click(
+    function() {
+      var newEle = Object.create(content.ele);
+      newEle.birth;
+      newEle.follow();
+    }
+  );
 </script>
 
 <style>

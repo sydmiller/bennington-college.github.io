@@ -85,3 +85,12 @@ content.ele = {
             );      
     }
 }
+
+content.scramble = {
+    count: 0,
+    index: null, 
+    string: null,
+    element: null,
+
+    
+}
