@@ -28,13 +28,9 @@ var characters = {
 	move: function(destX, destY, count) {
 		var whichChar = Math.floor(Math.random()*characters.count);
 		//alert(characters.count);
-		$('.character').animate(
-			{ top: destY, left: destX },
-		  	3000
-		);
 		$('.character').each(function(index) {
 				$(this).animate(
-				{ opacity: .25, top: Math.random()*300, left: Math.random()*300},
+				{ opacity: Math.random(), top: Math.random()*300, left: Math.random()*300},
 		  		3000
 			);					
 		});
