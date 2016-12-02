@@ -57,7 +57,7 @@ content.text = {
 
     	// change corresponding text in the html document using jquery .text() method
         this.element.text(newEntry);
-    }
+    },
 
     scramble: function() {
         A = Array.from(this.string);
