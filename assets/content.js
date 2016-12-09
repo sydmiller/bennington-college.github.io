@@ -1,5 +1,3 @@
-// declare namespace object
-var content = {};
 
 // declare and initialize text prototype object
 content.text = {
@@ -32,7 +30,7 @@ content.text = {
     place: function() {
 
     	// place text at end of div with id="pool"
-        $('#pool').append("<span class=\"text\" id=\"text"+ this.index +"\">"+ this.string +"</span>");
+        $('#clickme').append("<span class=\"text\" id=\"text"+ this.index +"\">"+ this.string +"</span>");
 
         // store jquery reference to new element
         this.element = $( '#text'+this.index ).eq(0);
@@ -72,17 +70,20 @@ content.ele = {
     element: null,
 
     birth: function() {
-        this.string = "🐘";
+        this.string = "elephant";
         content.ele.count++;
         this.index = content.ele.count;
-        this.string.resizable( {
+        $(this).resizable( {
             aspectRatio: true
         });
 
+        $('#clickme').append("<span class=\"ele\" id=\"ele"+ this.index +"\">"+ this.string +"</span>");
+        this.element = $( '#ele'+this.index ).eq(0);
+        var elephant = this;
     },
 
     follow: function() {
-        this.string.animate(
+        $(this).animate(
             {top: event.pageY, left: event.pageX},
             5000, 
             "easeOutBounce"
